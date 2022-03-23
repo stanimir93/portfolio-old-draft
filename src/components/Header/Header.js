@@ -15,19 +15,19 @@ export default function Header() {
                     </li>
                     <li>
                         <Link to='/projects'>
-                            <i class='bi bi-code-square'></i>
+                            <i className='bi bi-code-square'></i>
                             <span>Projects</span>
                         </Link>
                     </li>
                     <li>
                         <Link to='/cv'>
-                            <i class='bi bi-file-person'></i>
+                            <i className='bi bi-file-person'></i>
                             <span>CV</span>
                         </Link>
                     </li>
                     <li>
                         <Link to='/contact'>
-                            <i class='bi bi-envelope'></i>
+                            <i className='bi bi-envelope'></i>
                             <span>Contact</span>
                         </Link>
                     </li>

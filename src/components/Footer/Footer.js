@@ -22,10 +22,19 @@ export default function Footer() {
             </nav>
             <ul>
                 <li>
-                    <i class='bi bi-linkedin'></i>
+                    <a href='https://www.linkedin.com/in/stanimir-nikolov/' target='_blank' title='LinkedIn'>
+                        <i className='bi bi-linkedin'></i>
+                    </a>
                 </li>
                 <li>
-                    <i class='bi bi-github'></i>
+                    <a href='https://github.com/stanimir93' target='_blank' title='GitHub'>
+                        <i className='bi bi-github'></i>
+                    </a>
+                </li>
+                <li>
+                    <a href='mailto:contact@stanimirnikolov.com' target='_blank' title='contact@stanimirnikolov.com'>
+                        <i className='bi bi-envelope-fill'></i>
+                    </a>
                 </li>
             </ul>
         </footer>
