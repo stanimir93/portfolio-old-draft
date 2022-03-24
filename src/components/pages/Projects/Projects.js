@@ -5,7 +5,7 @@ import PageHeading from '../../PageHeading/PageHeading';
 import Project from '../../Project/Project';
 
 export default function Projects() {
-    const [projectsData, setProjectsData] = useState(null);
+    const [projectsData, setProjectsData] = useState(window.fetchedDataForProjectCards || null);
     window.fetchedDataForProjectCards = window.fetchedDataForProjectCards || null;
 
     // fetch data and update state
@@ -35,7 +35,6 @@ export default function Projects() {
                           <Project key={Date.now()} project={projectsData[project]} />
                       ))
                     : null}
-                {/* {projectsData ? Object.keys(projectsData).map(project => console.log(projectsData[project])) : null} */}
             </section>
         </main>
     );
