@@ -1,0 +1,16 @@
+{
+    "esudance": {
+        "title": "EsuDance",
+        "tools": ["HTML", "CSS", "JavaScript"],
+        "url": "esudance.co.uk",
+        "description": [
+            "Dance company website with with photo/video gallery, timetable and contact details.",
+            "Built in plain HTML, CSS and JavaScript (no libraries or frameworks)."
+        ],
+        "technical_details": [
+            "The gallery initially uses low resolution photos and fetches high resolution when in fullscreen.",
+            "The classes page is a single-page application. It populates the content from a JSON file and changes content in response to hash changes."
+        ],
+        "image": "esudance.webp"
+    }
+}
