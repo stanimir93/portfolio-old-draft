@@ -16,14 +16,16 @@ export default function Project(props) {
                     <p key={p.slice(0, 12)}>{p}</p>
                 ))}
             </div>
-            <button>Technical Details</button>
 
-            {/* Dropdown */}
-            <div key={`b${Date.now()}`}>
-                {technicalDetails.map(p => (
-                    <p key={p.slice(0, 12)}>{p}</p>
-                ))}
-            </div>
+            <details>
+                <summary>Technical Details</summary>
+                {/* Dropdown */}
+                <div key={`b${Date.now()}`}>
+                    {technicalDetails.map(p => (
+                        <p key={p.slice(0, 12)}>{p}</p>
+                    ))}
+                </div>
+            </details>
 
             {/* Badges */}
             <div key={`c${Date.now()}`}>
@@ -33,8 +35,11 @@ export default function Project(props) {
             </div>
 
             {/* Image */}
-            <img src={`rc={./image/${image}`} alt='project'></img>
-            <a href={url}>Open Website</a>
+            <div style={{ backgroundImage: `url("images/${image}")` }}>
+                <a href={`https://${url}`} target='_blank' rel='noreferrer'>
+                    Open Website
+                </a>
+            </div>
         </div>
     );
 }
