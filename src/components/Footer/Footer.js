@@ -22,13 +22,13 @@ export default function Footer() {
             </nav>
             <ul>
                 <li>
-                    <a href='https://www.linkedin.com/in/stanimir-nikolov/' target='_blank' title='LinkedIn'>
-                        <i className='bi bi-linkedin'></i>
+                    <a href='https://github.com/stanimir93' target='_blank' title='GitHub'>
+                        <i className='bi bi-github'></i>
                     </a>
                 </li>
                 <li>
-                    <a href='https://github.com/stanimir93' target='_blank' title='GitHub'>
-                        <i className='bi bi-github'></i>
+                    <a href='https://www.linkedin.com/in/stanimir-nikolov/' target='_blank' title='LinkedIn'>
+                        <i className='bi bi-linkedin'></i>
                     </a>
                 </li>
                 <li>
