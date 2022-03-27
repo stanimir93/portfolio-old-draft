@@ -3,33 +3,33 @@ import { Link } from 'react-router-dom';
 
 export default function Header() {
     return (
-        <header>
-            <a href='https://stanimirnikolov.com' id='logo-text'>
+        <header className='flex justify-between p-8'>
+            <a className='text-2xl hidden md:inline' href='https://stanimirnikolov.com' id='logo-text'>
                 S.Nikolov
             </a>
             <nav>
-                <ul>
+                <ul className='flex space-x-16 text-xl'>
                     <li>
-                        <Link to='/'>
-                            <i className='bi bi-house'></i>
+                        <Link className='flex flex-col md:flex-row items-center md:items-end' to='/'>
+                            <i className='bi bi-house md:pr-3'></i>
                             <span>Home</span>
                         </Link>
                     </li>
                     <li>
-                        <Link to='/projects'>
-                            <i className='bi bi-code-square'></i>
+                        <Link className='flex flex-col md:flex-row items-center md:items-end' to='/projects'>
+                            <i className='bi bi-code-square md:pr-3'></i>
                             <span>Projects</span>
                         </Link>
                     </li>
                     <li>
-                        <Link to='/cv'>
-                            <i className='bi bi-file-person'></i>
+                        <Link className='flex flex-col md:flex-row items-center md:items-end' to='/cv'>
+                            <i className='bi bi-file-person md:pr-3'></i>
                             <span>CV</span>
                         </Link>
                     </li>
                     <li>
-                        <Link to='/contact'>
-                            <i className='bi bi-envelope'></i>
+                        <Link className='flex flex-col md:flex-row items-center md:items-end' to='/contact'>
+                            <i className='bi bi-envelope md:pr-3'></i>
                             <span>Contact</span>
                         </Link>
                     </li>
