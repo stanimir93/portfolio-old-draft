@@ -29,7 +29,7 @@ export default function Projects() {
     return (
         <main>
             <PageHeading title='MY PROJECTS' />
-            <section>
+            <section className='w-full flex flex-col items-center'>
                 {projectsData
                     ? Object.keys(projectsData).map(project => (
                           <Project key={project} project={projectsData[project]} />
