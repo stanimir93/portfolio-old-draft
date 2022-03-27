@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom';
 export default function Header() {
     return (
         <header>
-            <span id='logo-text'>S.Nikolov</span>
+            <a href='https://stanimirnikolov.com' id='logo-text'>
+                S.Nikolov
+            </a>
             <nav>
                 <ul>
                     <li>
