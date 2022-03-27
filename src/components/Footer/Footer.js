@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Footer() {
     return (
-        <footer className='p-8 '>
+        <footer className='p-8 mt-20 '>
             <nav>
                 <ul className='flex place-content-center text-base mb-6'>
                     <li>

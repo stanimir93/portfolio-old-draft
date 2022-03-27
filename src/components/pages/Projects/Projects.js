@@ -32,7 +32,7 @@ export default function Projects() {
             <section>
                 {projectsData
                     ? Object.keys(projectsData).map(project => (
-                          <Project key={Date.now()} project={projectsData[project]} />
+                          <Project key={project} project={projectsData[project]} />
                       ))
                     : null}
             </section>
