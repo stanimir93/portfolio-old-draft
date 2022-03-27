@@ -48,5 +48,5 @@ export default function PDF(props) {
             };
         }
     }, []);
-    return <div id='adobe-dc-view'></div>;
+    return <div className='w-full drop-shadow-lg' id='adobe-dc-view'></div>;
 }

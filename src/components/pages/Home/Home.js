@@ -9,7 +9,7 @@ export default function Home() {
                 <h3 className='text-3xl font-semibold mb-4'>Web Developer</h3>
                 <h6 className='text-lg'>JavaScript, CSS, HTML, React, Node, Express, SQL</h6>
             </section>
-            <section className='clear-both  p-16'>
+            <section className='clear-both p-16'>
                 <div className='drop-shadow-md max-w-4xl bg-white p-8'>
                     <h3 className='text-3xl font-semibold'>About Me</h3>
                     <p className='my-4 text-lg'>

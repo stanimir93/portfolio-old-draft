@@ -61,18 +61,30 @@ export default function CV() {
     return (
         <main>
             <PageHeading title='MY CV' />
-            <div>
-                <button type='button' className='' id='download-cv'>
-                    Download
+            <div className='pb-20'>
+                <button
+                    className='border-solid border-2 p-3 w-40 rounded mx-2 font-semibold'
+                    type='button'
+                    id='download-cv'
+                >
+                    DOWNLOAD
                 </button>
-                <button type='button' className='' id='open-cv'>
-                    Open
+                <button
+                    className='border-solid border-2 p-3 w-40 rounded mx-2 font-semibold'
+                    type='button'
+                    id='open-cv'
+                >
+                    OPEN
                 </button>
-                <button type='button' className='' id='print-cv'>
-                    Print
+                <button
+                    className='border-solid border-2 p-3 w-40 rounded mx-2 font-semibold'
+                    type='button'
+                    id='print-cv'
+                >
+                    PRINT
                 </button>
             </div>
-            <section>
+            <section className='w-full max-w-screen-lg'>
                 <PDF />
             </section>
         </main>
