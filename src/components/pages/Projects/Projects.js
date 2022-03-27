@@ -28,7 +28,7 @@ export default function Projects() {
 
     return (
         <main>
-            <PageHeading title='My Projects' />
+            <PageHeading title='MY PROJECTS' />
             <section>
                 {projectsData
                     ? Object.keys(projectsData).map(project => (

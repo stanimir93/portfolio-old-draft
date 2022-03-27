@@ -4,7 +4,7 @@ import PageHeading from '../../PageHeading/PageHeading';
 export default function Contact() {
     return (
         <main>
-            <PageHeading title='Contact Me' />
+            <PageHeading title='CONTACT ME' />
             <section>
                 <div>
                     <p>If you would like us to work together or have any questions, please do contact me.</p>
