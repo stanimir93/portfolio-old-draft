@@ -60,7 +60,7 @@ export default function CV() {
 
     return (
         <main>
-            <PageHeading title='My CV' />
+            <PageHeading title='MY CV' />
             <div>
                 <button type='button' className='' id='download-cv'>
                     Download
