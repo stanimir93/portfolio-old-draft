@@ -10,8 +10,10 @@ export default function Home() {
                 <h6 className='text-lg'>JavaScript, CSS, HTML, React, Node, Express, SQL</h6>
             </section>
             <section className='clear-both p-16 pb-0'>
-                <div className='shadow-md max-w-4xl bg-white p-10'>
-                    <h3 className='text-3xl font-semibold'>About Me</h3>
+                <div className='shadow-md max-w-4xl bg-white p-10' id='about-me'>
+                    <h3 className='text-3xl font-semibold'>
+                        <a href='#about-me'>About Me</a>
+                    </h3>
                     <p className='my-4 text-lg'>
                         My background is in Sport and Exercise Science. In my early twenties, I was involved in coaching
                         jobs and research projects of various kinds. I worked for sport centres and assisted in

@@ -11,10 +11,13 @@ export default function Project(props) {
         <div
             className=' grid grid-cols-3  bg-white shadow-md rounded my-8 overflow-hidden text-lg w-full  max-w-4xl'
             key={title}
+            id={title}
         >
             {/* Body */}
-            <div className='p-8 col-span-2'>
-                <h4 className='text-2xl font-semibold'>{title}</h4>
+            <div className='p-10 col-span-2'>
+                <h4 className='text-2xl font-semibold mb-2'>
+                    <a href={`#${title}`}>{title}</a>
+                </h4>
                 <div key={`a${Date.now()}`}>
                     {description.map(p => (
                         <p key={p.slice(0, 12)}>{p}</p>
@@ -51,7 +54,7 @@ export default function Project(props) {
             >
                 <div className='absolute top-0 bottom-0 left-0 right-0 flex justify-center items-center'>
                     <a className='p-3 rounded' href={`https://${url}`} target='_blank' rel='noreferrer'>
-                        OPEN
+                        VIEW WEBSITE
                     </a>
                 </div>
             </div>
