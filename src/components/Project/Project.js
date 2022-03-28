@@ -9,13 +9,13 @@ export default function Project(props) {
     const tools = props.project.tools;
     return (
         <div
-            className=' grid grid-cols-3  bg-white shadow-md rounded my-8 overflow-hidden text-lg w-full  max-w-4xl'
+            className=' grid grid-cols-12  bg-white shadow-md rounded my-8 overflow-hidden text-lg w-full  max-w-4xl'
             key={title}
             id={title}
         >
             {/* Body */}
-            <div className='p-10 col-span-2'>
-                <h4 className='text-2xl font-semibold mb-2'>
+            <div className='p-10 col-span-8'>
+                <h4 className='text-2xl font-semibold mb-4'>
                     <a href={`#${title}`}>{title}</a>
                 </h4>
                 <div key={`a${Date.now()}`}>
@@ -24,7 +24,7 @@ export default function Project(props) {
                     ))}
                 </div>
 
-                <details>
+                <details className='mt-4'>
                     <summary className=''>
                         <span className='font-semibold cursor-pointer underline underline-offset-2 text-rose-500 decoration-sky-400'>
                             Technical Details
@@ -39,9 +39,9 @@ export default function Project(props) {
                 </details>
 
                 {/* Badges */}
-                <div key={`c${Date.now()}`}>
+                <div className='mt-4 font-semibold' key={`c${Date.now()}`}>
                     {tools.map(tool => (
-                        <span className='mx-2 p-1 text-base' key={tool.slice(0, 12)}>
+                        <span className='mr-2 p-1 text-base' key={tool.slice(0, 12)}>
                             {tool}
                         </span>
                     ))}
@@ -49,7 +49,7 @@ export default function Project(props) {
             </div>
             {/* Image */}
             <div
-                className=' h-72 bg-center bg-no-repeat bg-cover relative'
+                className=' min-h-80 bg-center bg-no-repeat bg-cover relative col-span-4'
                 style={{ backgroundImage: `url("images/${image}")` }}
             >
                 <div className='absolute top-0 bottom-0 left-0 right-0 flex justify-center items-center'>
