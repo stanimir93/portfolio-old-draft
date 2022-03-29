@@ -17,8 +17,8 @@ export default function Badge(props) {
 
     const item = props.tool.toLowerCase();
 
-    const background = tools[item]?.[0] || '#D1D5DB';
-    const text = tools[item]?.[1] || '#334155';
+    const background = tools[item]?.[0] || '#CBD5E1';
+    const text = tools[item]?.[1] || '#0F172A';
     // const border =
 
     return (
