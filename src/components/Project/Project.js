@@ -1,4 +1,5 @@
 import './project.css';
+import Badge from '../Badge/Badge';
 
 export default function Project(props) {
     const title = props.project.title;
@@ -39,11 +40,12 @@ export default function Project(props) {
                 </details>
 
                 {/* Badges */}
-                <div className='mt-4 font-semibold' key={`c${Date.now()}`}>
+                <div className='text-sm mt-4 font-semibold' key={`c${Date.now()}`}>
                     {tools.map(tool => (
-                        <span className='mr-2 p-1 text-base' key={tool.slice(0, 12)}>
-                            {tool}
-                        </span>
+                        // <span className='mr-2 p-1 text-base' key={tool.slice(0, 12)}>
+                        //     {tool}
+                        // </span>
+                        <Badge key={`${title}${tool}`} tool={tool} />
                     ))}
                 </div>
             </div>
@@ -53,8 +55,13 @@ export default function Project(props) {
                 style={{ backgroundImage: `url("images/${image}")` }}
             >
                 <div className='absolute top-0 bottom-0 left-0 right-0 flex justify-center items-center'>
-                    <a className='p-3 rounded' href={`https://${url}`} target='_blank' rel='noreferrer'>
-                        VIEW WEBSITE
+                    <a
+                        className='p-3 bg-green-500 text-white rounded px-7 py-3 text-sm font-semibold'
+                        href={`https://${url}`}
+                        target='_blank'
+                        rel='noreferrer'
+                    >
+                        VISIT WEBSITE
                     </a>
                 </div>
             </div>
