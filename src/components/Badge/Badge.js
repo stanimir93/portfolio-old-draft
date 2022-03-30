@@ -6,7 +6,7 @@ export default function Badge(props) {
         react: ['#222', '#00d8ff'],
         node: ['#90c53f', '#46483d'],
         express: ['#F8FAFC', '#1C1917'],
-        html: ['#EA580C', '#fff'],
+        html: ['#DC2626', '#fff'],
         css: ['#2563EB', '#fff'],
         sql: [null, null],
         sequelize: ['#F8FAFC', '#0284C7'],

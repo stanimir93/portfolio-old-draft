@@ -4,11 +4,10 @@
         "tools": ["HTML", "CSS", "JavaScript"],
         "url": "esudance.co.uk",
         "description": [
-            "Dance company website with with photo/video gallery, timetable and contact details.",
-            "Built in plain HTML, CSS and JavaScript (no libraries or frameworks)."
+            "Dance company website with with photo/video gallery, timetable and contact details. Built in plain HTML, CSS and JavaScript (no libraries or frameworks)."
         ],
         "technical_details": [
-            "The gallery initially uses low resolution photos and fetches high resolution when in fullscreen.",
+            "The gallery uses low resolution photos in page mode and fetches high resolution photos in fullscreen mode.",
             "The classes page is a single-page application. It populates the content from a JSON file and changes content in response to hash changes."
         ],
         "image": "esudance.webp"
@@ -18,8 +17,7 @@
         "tools": ["React", "Node", "Express", "Sequelize", "SQLite"],
         "url": "psy-research-expressions-demo.herokuapp.com",
         "description": [
-            "Web Application running a psychological test for a research project",
-            "It collects data, sends it to the server and saves it in an SQL file."
+            "Web Application running a psychological test for a research project. It collects data, sends it to the server and saves it in an SQL file."
         ],
         "technical_details": [
             "The Web App is built in React, while the server is NodeJS with Express.",
@@ -33,7 +31,7 @@
         "title": "Zeolite.bg",
         "tools": ["HTML", "Bootstrap", "CSS", "JavaScript"],
         "url": "zeolite.bg",
-        "description": ["Marketing website for a zelite distributer.", "Interactive with a multi-language support."],
+        "description": ["Marketing website for a zelite distributer. Interactive with a multi-language support."],
         "technical_details": [
             "The interactivity and appearance are added using Bootstrap and JavaScript and CSS.",
             "The language preferences are saved in Local Storage.",
@@ -46,9 +44,7 @@
         "tools": ["React", "Tailwind", "Adobe PDF API"],
         "url": "stanimirnikolov.com",
         "description": [
-            "My portfolio website.",
-            "It has my projects, CV and contact details.",
-            "Built in React and Tailwind CSS."
+            "My portfolio website. It has my projects, CV and contact details. Built in React and Tailwind CSS."
         ],
         "technical_details": [
             "The website uses React with React Router.",

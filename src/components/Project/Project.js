@@ -20,27 +20,30 @@ export default function Project(props) {
                     <a href={`#${title}`}>{title}</a>
                 </h4>
                 <div key={`a${Date.now()}`}>
-                    {description.map(p => (
-                        <p key={p.slice(0, 12)}>{p}</p>
+                    {description.map(item => (
+                        <p key={item.slice(0, 12)}>{item}</p>
                     ))}
                 </div>
 
-                <details className='mt-4'>
-                    <summary className=''>
-                        <span className='font-semibold cursor-pointer underline underline-offset-2 text-rose-500 decoration-sky-400'>
-                            Technical Details
+                <details className='mt-4 '>
+                    <summary className='w-min'>
+                        <span className='font-semibold bg-blend-normal cursor-pointer ml-3 text-green-500 '>
+                            <span className=''>Details</span>
+                            <i class='bi bi-caret-down-fill ml-3 text-5xl'></i>
                         </span>
                     </summary>
                     {/* Dropdown */}
-                    <div key={`b${Date.now()}`}>
-                        {technicalDetails.map(p => (
-                            <p key={p.slice(0, 12)}>{p}</p>
+                    <ul className='  border-2 p-5 pl-10 rounded border-green-500' key={`b${Date.now()}`}>
+                        {technicalDetails.map(item => (
+                            <li className='list-disc my-4' key={item.slice(0, 12)}>
+                                {item}
+                            </li>
                         ))}
-                    </div>
+                    </ul>
                 </details>
 
                 {/* Badges */}
-                <div className='text-sm mt-4 font-semibold' key={`c${Date.now()}`}>
+                <div className='text-sm mt-10 font-semibold' key={`c${Date.now()}`}>
                     {tools.map(tool => (
                         // <span className='mr-2 p-1 text-base' key={tool.slice(0, 12)}>
                         //     {tool}
@@ -51,7 +54,7 @@ export default function Project(props) {
             </div>
             {/* Image */}
             <div
-                className=' min-h-80 bg-center bg-no-repeat bg-cover relative col-span-4'
+                className=' h-80 bg-center bg-no-repeat bg-cover relative col-span-4'
                 style={{ backgroundImage: `url("images/${image}")` }}
             >
                 <div className='absolute top-0 bottom-0 left-0 right-0 flex justify-center items-center'>

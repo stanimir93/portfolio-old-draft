@@ -3,3 +3,28 @@ details summary::marker {
     display: none;
     content: '';
 }
+
+summary:focus {
+    outline: none;
+}
+
+summary {
+    z-index: 1;
+}
+
+details[open] summary ~ * {
+    animation: sweep 0.3s ease;
+    margin-top: -28px;
+    z-index: 0;
+}
+
+@keyframes sweep {
+    0% {
+        opacity: 0;
+        margin-top: -50px;
+    }
+    100% {
+        opacity: 1;
+        margin-top: -28px;
+    }
+}
