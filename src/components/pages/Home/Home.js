@@ -3,14 +3,21 @@ import './home.css';
 export default function Home() {
     return (
         <main>
-            <section className='w-full max-w-screen-xl p-20'>
-                <img className='float-left md:float-right h-56' src='./images/profile.webp' alt='profile_photo'></img>
-                <h1 className='text-5xl font-bold mb-12'>STANIMIR NIKOLOV</h1>
+            <section className='w-full max-w-screen-lg '>
+                
+                <div className='bg-white rounded py-28 px-16 mt-24 shadow-md shadow-slate-300 '>
+
+                 
+                      <img className=' rounded  float-left md:float-right h-56 rounded' src='./images/profile.webp' alt='profile_photo'></img>
+           
+                <h1 className='text-5xl font-bold mb-12'>STANIMIR NIKOLOV</h1> 
                 <h3 className='text-3xl font-semibold mb-4'>Web Developer</h3>
                 <h6 className='text-lg'>JavaScript, CSS, HTML, React, Node, Express, SQL</h6>
+                <div className='clear-both'></div>
+                </div>
             </section>
-            <section className='clear-both p-16 pb-0'>
-                <div className='shadow-md max-w-4xl bg-white p-10' id='about-me'>
+            <section className='clear-both '>
+                <div className='shadow-md shadow-slate-300 max-w-4xl bg-white p-12 mt-24 rounded' id='about-me'>
                     <h3 className='text-3xl font-semibold'>
                         <a href='#about-me'>About Me</a>
                     </h3>

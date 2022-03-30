@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 export default function Header() {
     return (
-        <header className='drop-shadow-sm shadow-slate-300 shadow-lg p-0 y-0'>
+        <header className='drop-shadow-sm shadow-slate-200 shadow-lg p-0 y-0'>
             <div className='flex items-baseline justify-center md:justify-between py-6 sm:p-8'>
                 
            
