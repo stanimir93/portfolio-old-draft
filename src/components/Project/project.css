@@ -1,30 +1,38 @@
-details summary::-webkit-details-marker,
-details summary::marker {
-    display: none;
-    content: '';
-}
-
-summary:focus {
-    outline: none;
-}
-
-summary {
-    z-index: 1;
-}
-
-details[open] summary ~ * {
-    animation: sweep 0.3s ease;
-    margin-top: -28px;
-    z-index: 0;
-}
-
 @keyframes sweep {
-    0% {
-        opacity: 0;
-        margin-top: -50px;
-    }
-    100% {
-        opacity: 1;
-        margin-top: -28px;
-    }
+  0% {
+    margin-top: -500px;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    margin-top: -55px;
+    background-color: inset;
+  }
+}
+.dropdown-container ul {
+  animation: sweep 0.3s ease-out;
+  margin-top: -55px;
+  display: block;
+}
+.dropdown-hidden ul {
+  display: none;
+}
+
+.dropdown-hiding ul {
+  margin-top: -500px;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(0, 0, 0, 0);
+  transition: margin 0.4s ease-in-out, background-color 0.1s ease-in, color 0.1s ease-in;
+}
+
+.dropdown-container button {
+  transition: all 0.3s ease-out 0.1s;
+}
+
+.dropdown-container:not(.dropdown-hidden):not(.dropdown-hiding) button {
+  margin-left: 40px;
+}
+
+.dropdown-hiding button {
+  margin-left: 0px;
 }
