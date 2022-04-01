@@ -59,3 +59,8 @@
     margin-top: 48px;
     margin-bottom: 48px;
 }
+
+/* Image */
+.img-container:hover > div {
+    background-color: rgba(15, 23, 42, 0.85);
+}

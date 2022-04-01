@@ -18,7 +18,9 @@ export default function Project(props) {
                 cardBodyWidth = entry.contentRect.width;
                 document.querySelectorAll('.card-body').forEach(elem => {
                     let height = elem.clientHeight;
-                    if (!elem.querySelector('.collapse-showing')) elem.style.minHeight = height + 'px';
+                    if (!elem.querySelector('.collapse-showing')) {
+                        elem.style.minHeight = height + 'px}';
+                    }
                 });
             }
         }
@@ -27,13 +29,13 @@ export default function Project(props) {
 
     return (
         <div
-            className=' project-card p-10 grid grid-cols-12 group bg-white shadow-md rounded-xl my-8 overflow-hidden  w-full  max-w-5xl'
+            className=' project-card p-10 grid grid-cols-12 group bg-white shadow-md rounded-xl my-8 overflow-hidden  w-full  max-w-4xl'
             key={title}
             id={title}
         >
             {/* Body */}
             <div className='card-body col-span-8 text-lg pr-10 bg-white'>
-                <h4 className='text-2xl font-bold mb-6 text-neutral-900'>
+                <h4 className='text-2xl font-extrabold mb-6 text-neutral-900'>
                     <a href={`#${title}`}>{title}</a>
                 </h4>
                 <div className='leading-normal  bg-white' key={`a${Date.now()}`}>
@@ -89,17 +91,17 @@ export default function Project(props) {
 
             {/* Image */}
             <div
-                className=' bg-center bg-no-repeat bg-cover relative col-span-4 row-span-2  rounded-xl'
+                className='img-container bg-center bg-no-repeat bg-cover relative col-span-4 row-span-2 shadow shadow-slate-300 rounded-xl '
                 style={{ backgroundImage: `url("images/${image}")` }}
             >
-                <div className='absolute top-0 bottom-0 left-0 right-0 flex justify-center items-center'>
+                <div className='absolute  rounded-lg top-0 bottom-0 left-0 opacity-0 hover:opacity-100 transition right-0 flex justify-center items-center'>
                     <a
-                        className='p-3 bg-green-500 text-white rounded-xl px-7 py-3 text-sm font-semibold'
+                        className='p-3 bg-gradient-to-r from-yellow-500 to-red-500 text-white rounded-xl px-7 py-3 text-sm font-semibold active:opacity-75'
                         href={`https://${url}`}
                         target='_blank'
                         rel='noreferrer'
                     >
-                        VISIT WEBSITE
+                        Visit Website
                     </a>
                 </div>
             </div>

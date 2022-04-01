@@ -23,7 +23,7 @@ export default function Badge(props) {
 
     return (
         <span
-            className='px-3 py-2 mr-3 rounded-xl transition opacity-75 group-hover:opacity-90 cursor-default'
+            className='px-3 py-2 mr-3 rounded-xl transition opacity-80 group-hover:opacity-100 cursor-default'
             key={Date.now() + props.tool}
             style={{ backgroundColor: background, color: text }}
         >

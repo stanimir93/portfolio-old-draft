@@ -13,9 +13,17 @@ export default function Home() {
                     ></img>
                     {/* </div> */}
 
-                    <h1 className='text-6xl rounded font-bold mb-16 text-neutral-900'>STANIMIR NIKOLOV</h1>
-                    <h6 className='text-3xl font-bold mb-6 text-neutral-900'>WEB DEVELOPER</h6>
-                    <h6 className='text-lg pb-24'>JavaScript, CSS, HTML, React, Node, Express, SQL</h6>
+                    <div className='mb-16 w-fit '>
+                        <h1 className='text-6xl  font-extrabold rounded-lg px-3 py-4'>STANIMIR NIKOLOV</h1>
+                    </div>
+                    <div className=' w-fit'>
+                        <h6 className='text-3xl text-slate-100 font-bold mb-6 bg-gradient-to-r to-slate-900 from-slate-700 rounded-lg px-4 py-0.5'>
+                            WEB&nbsp;DEVELOPER
+                        </h6>
+                    </div>
+                    <div className='mb-6  pb-24 w-fit'>
+                        <h6 className='text-lg text-neutral-600'>JavaScript, CSS, HTML, React, Node, Express, SQL</h6>
+                    </div>
                     <div className='clear-both'></div>
                 </div>
             </section>
@@ -24,7 +32,7 @@ export default function Home() {
                     className='shadow-md shadow-slate-300 max-w-4xl bg-white py-14 px-12 mt-24 mx-16 rounded-xl'
                     id='about-me'
                 >
-                    <h3 className='text-3xl font-bold mb-8 text-neutral-900'>
+                    <h3 className='text-3xl font-extrabold mb-8 text-neutral-900'>
                         <a href='#about-me'>ABOUT ME</a>
                     </h3>
                     <p className='my-4 '>
