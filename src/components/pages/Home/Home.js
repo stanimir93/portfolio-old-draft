@@ -4,7 +4,7 @@ export default function Home() {
     return (
         <main className='text-neutral-800'>
             <section className='w-full max-w-screen-xl '>
-                <div className='bg-white rounded-xl pt-24 px-16 lg:px-20 mt-20 mx-16 lg:mx-20 shadow-md shadow-slate-300 '>
+                <div className='bg-white rounded-xl pt-24 px-16 lg:px-20 mt-20 mx-16 lg:mx-20 shadow-md shadow-slate-300 lift-up'>
                     {/* <div className='border-4 border-orange-500'> */}
                     <img
                         className=' rounded-xl  float-left md:float-right mb-24 ml-10 h-60'
@@ -29,7 +29,7 @@ export default function Home() {
             </section>
             <section className='clear-both text-lg '>
                 <div
-                    className='shadow-md shadow-slate-300 max-w-4xl bg-white py-14 px-12 mt-24 mx-16 rounded-xl'
+                    className='shadow-md shadow-slate-300 max-w-4xl bg-white py-14 px-12 mt-24 mx-16 rounded-xl lift-up'
                     id='about-me'
                 >
                     <h3 className='text-3xl font-extrabold mb-8 text-neutral-900'>

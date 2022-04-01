@@ -39,7 +39,7 @@ main {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background-color: #f1f5f9;
+    /* background-color: #f1f5f9; */
     background-color: #e2e8f0;
 }
 
@@ -47,7 +47,11 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-/* lift-up:hover {
-    transition: transform 0.4s ease;
-    transform: ;
-} */
+.lift-up {
+    transform: translateY(0px);
+    transition: transform 0.2s ease;
+}
+
+.lift-up:hover {
+    transform: translateY(-4px);
+}

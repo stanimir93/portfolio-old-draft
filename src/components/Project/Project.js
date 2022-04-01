@@ -29,7 +29,7 @@ export default function Project(props) {
 
     return (
         <div
-            className=' project-card p-10 grid grid-cols-12 group bg-white shadow-md rounded-xl my-8 overflow-hidden  w-full  max-w-4xl'
+            className=' project-card p-10 grid grid-cols-12 group bg-white shadow-md rounded-xl my-5 overflow-hidden  w-full  max-w-4xl lift-up'
             key={title}
             id={title}
         >
