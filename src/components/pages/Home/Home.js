@@ -6,8 +6,11 @@ export default function Home() {
       <section className='w-full max-w-screen-xl '>
         <div
           className='
-          grid grid-cols-12 grid-rows-3
-          py-24 px-16 lg:px-20 
+          grid grid-cols-12 
+          gap-x-12
+          gap-y-6
+          py-24 
+          px-12 lg:px-16 xl:px-20 
           mt-20 mx-16 lg:mx-20 
           rounded-xl 
           shadow-md 
@@ -17,15 +20,15 @@ export default function Home() {
           <div
             className='
             col-span-8 
-            h-fit w-fit 
+            h-fit w-min xl:w-fit
             p-0.5 
-            mb-8 lg:mb-16 
+            mb-8 lg:mb-12
             rounded-lg 
             bg-gradient-to-r from-slate-700 to-slate-900 '
           >
             <h1
               className='
-              text-5xl xl:text-6xl  
+              text-5xl lg:text-6xl  
               px-3 py-4
               font-extrabold 
               rounded-lg 
@@ -40,7 +43,8 @@ export default function Home() {
             className='
             col-span-4
             row-span-3
-            h-60
+            lg:justify-self-end
+            h-64
             rounded-xl'
             src='./images/profile.webp'
             alt='profile_photo'
@@ -51,7 +55,6 @@ export default function Home() {
             <h3
               className='
             px-4 py-0.5
-            mb-3 
             text-2xl font-bold select-none
             rounded-lg 
             bg-gradient-to-r to-slate-900 from-slate-700 text-slate-100'
@@ -64,7 +67,6 @@ export default function Home() {
           <div
             className='
             col-span-8  
-            mb-6 pb-24 
             w-fit'
           >
             <h6 className='text-lg text-slate-800'>
