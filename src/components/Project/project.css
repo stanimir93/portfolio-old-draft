@@ -1,66 +1,70 @@
 /* Collapse Box */
 
 @keyframes sweep {
-    0% {
-        margin-top: -200px;
-        background-color: rgba(0, 0, 0, 0);
-        color: rgba(0, 0, 0, 0);
-    }
-    50% {
-        background-color: rgba(0, 0, 0, 0);
-        color: rgba(0, 0, 0, 0);
-    }
+  0% {
+    margin-top: -200px;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0);
+  }
+  50% {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0);
+  }
 
-    100% {
-        margin-top: -50px;
-        background-color: inset;
-        color: #262626;
-    }
+  100% {
+    margin-top: -50px;
+    background-color: inset;
+    color: #262626;
+  }
 }
 .collapse-container ul {
-    color: #262626;
-    animation: sweep 0.4s ease-out;
-    margin-top: -50px;
-    display: block;
+  color: #262626;
+  animation: sweep 0.4s ease-out;
+  margin-top: -50px;
+  display: block;
 }
 .collapse-hidden ul {
-    display: none;
+  display: none;
 }
 
 .collapse-hiding ul {
-    margin-top: -400px;
-    background-color: rgba(0, 0, 0, 0);
-    color: rgba(0, 0, 0, 0);
-    transition: margin 0.4s ease-in, background-color 0.1s ease-in, color 0.1s ease-in;
+  margin-top: -400px;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(0, 0, 0, 0);
+  transition: margin 0.4s ease-in, background-color 0.1s ease-in, color 0.1s ease-in;
 }
 
 .collapse-container button {
 }
 
 .collapse-container.collapse-shown:not(.collapse-hiding) button {
-    margin-left: 40px;
-    transition: all 0.4s ease 0s;
+  margin-left: 40px;
+  transition: all 0.4s ease 0s;
 }
 
 .collapse-hiding button {
-    transition: all 0.4s ease 0s;
-    margin-left: 0px;
+  transition: all 0.4s ease 0s;
+  margin-left: 0px;
 }
 
 /* Spacing inside body */
 .collapse-container {
-    transition: margin 0.4s ease-in;
+  transition: margin 0.4s ease-in;
 
-    margin-top: 24px;
-    margin-bottom: 24px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .collapse-shown {
-    margin-top: 48px;
-    margin-bottom: 48px;
+  margin-top: 48px;
+  margin-bottom: 48px;
 }
 
 /* Image */
 .img-container:hover > div {
-    background-color: rgba(15, 23, 42, 0.85);
+  /* background-color: rgba(15, 23, 42, 0.85); */
+  background-color: rgba(241, 245, 249, 1);
+  transition: all 0.4s ease;
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  /* background-image: linear-gradient(to right, #334155, #0f172a); */
 }

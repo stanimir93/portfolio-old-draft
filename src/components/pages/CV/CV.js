@@ -45,9 +45,18 @@ export default function CV() {
   // Hide non-functional buttons depending on device and browser
   function hideButtons() {
     // If desktop and not firefox -> return
-    if ((ua.browser !== "Firefox" && ua.os === "Windows") || ua.os === "Linux" || ua.os === "Mac OS") return;
+    if (
+      (ua.browser !== "Firefox" && ua.os === "Windows") ||
+      ua.os === "Linux" ||
+      ua.os === "Mac OS"
+    )
+      return;
     // If desktop and firefox -> hide print
-    else if ((ua.browser === "Firefox" && ua.os === "Windows") || ua.os === "Linux" || ua.os === "Mac OS") {
+    else if (
+      (ua.browser === "Firefox" && ua.os === "Windows") ||
+      ua.os === "Linux" ||
+      ua.os === "Mac OS"
+    ) {
       document.getElementById("print-cv").style.display = "none";
       document.getElementById("open-cv").style.display = "none";
     }
@@ -61,14 +70,26 @@ export default function CV() {
   return (
     <main>
       <PageHeading title='MY CV' />
-      <div className='pb-20'>
-        <button className='border-solid border-2 p-3 w-40 rounded mx-2 font-semibold' type='button' id='download-cv'>
+      <div className='mb-20 p-10 rounded-lg text-white font-bold font-xl bg-white shadow-md shadow-slate-300 group font-mono lift-up'>
+        <button
+          className=' py-2 w-32 rounded-lg mx-2  font-semibold bg-gradient-to-r  to-green-700 from-green-600 opacity-80 group-hover:opacity-100 active:opacity-80'
+          type='button'
+          id='download-cv'
+        >
           DOWNLOAD
         </button>
-        <button className='border-solid border-2 p-3 w-40 rounded mx-2 font-semibold' type='button' id='open-cv'>
+        <button
+          className=' py-2 w-32 rounded-lg mx-2 font-semibold bg-gradient-to-r to-sky-700 from-sky-600 opacity-80 group-hover:opacity-100 active:opacity-80'
+          type='button'
+          id='open-cv'
+        >
           OPEN
         </button>
-        <button className='border-solid border-2 p-3 w-40 rounded mx-2 font-semibold' type='button' id='print-cv'>
+        <button
+          className=' py-2 w-32 rounded-lg mx-2 font-semibold bg-gradient-to-r to-red-600 from-red-500 opacity-80 group-hover:opacity-100 active:opacity-80'
+          type='button'
+          id='print-cv'
+        >
           PRINT
         </button>
       </div>

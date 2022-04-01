@@ -1,65 +1,69 @@
 {
-    "stanimir_nikolov": {
-        "title": "StanimirNikolov.com",
-        "tools": ["React", "Tailwind", "Adobe PDF API"],
-        "url": "stanimirnikolov.com",
-        "description": [
-            "My portfolio website. It has my projects, CV and contact details. Built in React and Tailwind CSS."
-        ],
-        "technical_details": [
-            "The website uses React with React Router.",
-            "Decorated with Tailwind CSS",
-            "Adobe PDF Embed API shows the PDF CV file."
-        ],
-        "image": "stanimirnikolov.com"
-    },
-    "zeolite": {
-        "title": "Zeolite.bg",
-        "tools": ["HTML", "Bootstrap", "CSS", "JavaScript"],
-        "url": "zeolite.bg",
-        "description": ["Marketing website for a zelite distributer. Interactive with a multi-language support."],
-        "technical_details": [
-            "The interactivity and appearance are added using Bootstrap and JavaScript and CSS.",
-            "The language preferences are saved in Local Storage.",
-            "The translation is fetched as JSON and applied on the page."
-        ],
-        "image": "zeolite.bg"
-    },
+  "stanimir_nikolov": {
+    "title": "StanimirNikolov.com",
+    "tools": ["React", "Tailwind", "Adobe PDF Embed API"],
+    "url": "stanimirnikolov.com",
+    "description": [
+      "My portfolio website. It has my projects, CV and contact details. Built in React and Tailwind CSS."
+    ],
+    "technical_details": [
+      "The website uses React with React Router.",
+      "Decorated with Tailwind CSS",
+      "Adobe PDF Embed API shows the PDF CV file."
+    ],
+    "image": "stanimirnikolov.com"
+  },
+  "zeolite": {
+    "title": "Zeolite.bg",
+    "tools": ["JavaScript", "HTML", "CSS", "Bootstrap"],
+    "url": "zeolite.bg",
+    "description": [
+      "Marketing website for a zelite distributer. Interactive with a multi-language support."
+    ],
+    "technical_details": [
+      "The interactivity and appearance are added using Bootstrap and JavaScript and CSS.",
+      "The language preferences are saved in Local Storage.",
+      "The translation is fetched as JSON and applied on the page."
+    ],
+    "image": "zeolite.bg"
+  },
 
-    "psytest": {
-        "title": "Psychology Test",
-        "tools": ["React", "Node", "Express", "Sequelize", "SQLite"],
-        "url": "psy-research-expressions-demo.herokuapp.com",
-        "description": [
-            "Web Application running a psychological test for a research project. It collects data, sends it to the server and saves it in an SQL file."
-        ],
-        "technical_details": [
-            "The Web App is built in React, while the server is NodeJS with Express.",
-            "Session Storage and IndexDB API's are used to save the test data (photos, progress, results, page access etc.)",
-            "The main test an asynchronous function which awaits participant's input and saves it.",
-            "The final results are sent as JSON to the server and converted to SQL using Sequelize."
-        ],
-        "image": "psy-test.webp"
-    },
-    "esudance": {
-        "title": "EsuDance",
-        "tools": ["HTML", "CSS", "JavaScript"],
-        "url": "esudance.co.uk",
-        "description": [
-            "Dance company website with photo/video gallery, timetable and contact details. Built in plain HTML, CSS and JavaScript (no libraries or frameworks)."
-        ],
-        "technical_details": [
-            "The gallery uses low resolution photos in page mode and fetches high resolution photos in fullscreen mode.",
-            "The classes page is a single-page application. It populates the content from a JSON file and changes content in response to hash changes."
-        ],
-        "image": "esudance.webp"
-    },
-    "candle_label_generator": {
-        "title": "Label Generator for Candles",
-        "tools": ["JavaScript", "HTML", "CSS"],
-        "url": "stanimir93.github.io/esuart-label-generator",
-        "description": ["My first JavaScript project. A small web app used to create labels for candles"],
-        "technical_details": ["Built in plain HTML, CSS and JavaScript (no libraries or frameworks)."],
-        "image": "candle-label-generator.webp"
-    }
+  "psytest": {
+    "title": "Psychology Test",
+    "tools": ["React", "Node", "Express", "Sequelize", "SQLite"],
+    "url": "psy-research-expressions-demo.herokuapp.com",
+    "description": [
+      "Web Application running a psychological test for a research project. It collects data, sends it to the server and saves it in an SQL file."
+    ],
+    "technical_details": [
+      "The Web App is built in React, while the server is NodeJS with Express.",
+      "Session Storage and IndexDB API's are used to save the test data (photos, progress, results, page access etc.)",
+      "The main test an asynchronous function which awaits participant's input and saves it.",
+      "The final results are sent as JSON to the server and converted to SQL using Sequelize."
+    ],
+    "image": "psy-test.webp"
+  },
+  "esudance": {
+    "title": "EsuDance",
+    "tools": ["HTML", "CSS", "JavaScript"],
+    "url": "esudance.co.uk",
+    "description": [
+      "Dance company website with photo/video gallery, timetable and contact details. Built in plain HTML, CSS and JavaScript (no libraries or frameworks)."
+    ],
+    "technical_details": [
+      "The gallery uses low resolution photos in page mode and fetches high resolution photos in fullscreen mode.",
+      "The classes page is a single-page application. It populates the content from a JSON file and changes content in response to hash changes."
+    ],
+    "image": "esudance.webp"
+  },
+  "candle_label_generator": {
+    "title": "Label Generator for Candles",
+    "tools": ["HTML", "CSS", "JavaScript"],
+    "url": "stanimir93.github.io/esuart-label-generator",
+    "description": [
+      "My first JavaScript project. A small web app used to create labels for candles"
+    ],
+    "technical_details": ["Built in plain HTML, CSS and JavaScript (no libraries or frameworks)."],
+    "image": "candle-label-generator.webp"
+  }
 }
