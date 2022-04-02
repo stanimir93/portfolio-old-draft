@@ -1,8 +1,8 @@
-import './cvheading.css';
-import { useEffect } from 'react';
-import printJS from 'print-js';
-import UAParser from 'ua-parser-js';
-import CSSClasses from '../../css-classes/css-classes';
+import "./cvheading.css";
+import { useEffect } from "react";
+import printJS from "print-js";
+import UAParser from "ua-parser-js";
+import CSSClasses from "../../css-classes/css-classes";
 
 export default function CVHeading() {
   // Add event listenner for buttons
@@ -11,21 +11,21 @@ export default function CVHeading() {
     hideButtons();
 
     // print
-    document.getElementById('print-cv').addEventListener('click', async () => {
-      printJS('cv.pdf');
+    document.getElementById("print-cv").addEventListener("click", async () => {
+      printJS("cv.pdf");
     });
     // download
-    document.getElementById('download-cv').addEventListener('click', () => {
-      let a = document.createElement('a');
-      a.setAttribute('href', 'cv.pdf');
-      a.setAttribute('download', 'cv.pdf');
+    document.getElementById("download-cv").addEventListener("click", () => {
+      let a = document.createElement("a");
+      a.setAttribute("href", "cv.pdf");
+      a.setAttribute("download", "cv.pdf");
       a.click();
     });
     // new window
-    document.getElementById('open-cv').addEventListener('click', () => {
-      let a = document.createElement('a');
-      a.setAttribute('href', 'http://localhost:3000/cv.pdf');
-      a.setAttribute('target', '_blank');
+    document.getElementById("open-cv").addEventListener("click", () => {
+      let a = document.createElement("a");
+      a.setAttribute("href", "http://localhost:3000/cv.pdf");
+      a.setAttribute("target", "_blank");
       a.click();
     });
   }, []);
@@ -44,28 +44,28 @@ export default function CVHeading() {
   function hideButtons() {
     // If desktop and not firefox -> return
     if (
-      (ua.browser !== 'Firefox' && ua.os === 'Windows') ||
-      ua.os === 'Linux' ||
-      ua.os === 'Mac OS'
+      (ua.browser !== "Firefox" && ua.os === "Windows") ||
+      ua.os === "Linux" ||
+      ua.os === "Mac OS"
     )
       return;
     // If desktop and firefox -> hide print
     else if (
-      (ua.browser === 'Firefox' && ua.os === 'Windows') ||
-      ua.os === 'Linux' ||
-      ua.os === 'Mac OS'
+      (ua.browser === "Firefox" && ua.os === "Windows") ||
+      ua.os === "Linux" ||
+      ua.os === "Mac OS"
     ) {
-      document.getElementById('print-cv').style.display = 'none';
-      document.getElementById('open-cv').style.display = 'none';
+      document.getElementById("print-cv").style.display = "none";
+      document.getElementById("open-cv").style.display = "none";
     }
     // If not desktop -> hide print and open
-    else if (ua.os !== 'Windows' || ua.os !== 'Linux' || ua.os !== 'Mac OS') {
-      document.getElementById('print-cv').style.display = 'none';
-      document.getElementById('open-cv').style.display = 'none';
+    else if (ua.os !== "Windows" || ua.os !== "Linux" || ua.os !== "Mac OS") {
+      document.getElementById("print-cv").style.display = "none";
+      document.getElementById("open-cv").style.display = "none";
     }
   }
   return (
-    <section className={`${CSSClasses.whiteBox} max-w-screen-lg`}>
+    <section className={`${CSSClasses.whiteBox} max-w-7xl`}>
       <div className={`${CSSClasses.padeHeadingContainer}`}>
         <h2 className={`${CSSClasses.padeHeading}`}>MY CV</h2>
       </div>

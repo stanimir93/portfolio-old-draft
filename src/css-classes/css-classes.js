@@ -3,7 +3,7 @@
 const CSSClasses = {
   whiteBox: `
   mb-12
-  p-8 lg:p-20 
+  p-8 lg:p-16
   w-full
   rounded-xl 
   shadow-md shadow-slate-300 
@@ -11,6 +11,17 @@ const CSSClasses = {
   shadow-slate-300 
   bg-white 
   lift-up
+  `,
+
+  main: `
+  px-2
+  py-4
+  flex
+  flex-col
+  items-center
+  w-full
+  text-neutral-800
+  bg-slate-200
   `,
 
   padeHeadingContainer: `

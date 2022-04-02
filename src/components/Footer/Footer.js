@@ -1,18 +1,18 @@
-import './footer.css';
-import { Link } from 'react-router-dom';
+import "./footer.css";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'instant' });
+    window.scrollTo({ top: 0, behavior: "instant" });
   }
 
   return (
     <footer
       className='
-      pt-14 px-4 
-    pb-12 
-
-    bg-slate-100 text-slate-600 
+      px-4 
+      pb-12 
+    bg-slate-200 
+    text-slate-600 
     font-mono'
     >
       {/* <hr className='w-96 m-auto mb-8  border-slate-200'/> */}

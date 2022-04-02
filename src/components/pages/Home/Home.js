@@ -1,17 +1,10 @@
-import './home.css';
-import CSSClasses from '../../../css-classes/css-classes';
+import "./home.css";
+import CSSClasses from "../../../css-classes/css-classes";
 
 export default function Home() {
   return (
-    <main
-      className='
-      px-4
-    text-neutral-800
-
-    '
-      id='homepage'
-    >
-      <section className='w-full max-w-5xl '>
+    <main className={`${CSSClasses.main}`} id='homepage'>
+      <section className='w-full max-w-7xl '>
         <div
           className={`${CSSClasses.whiteBox}
           grid grid-cols-12 
@@ -79,7 +72,7 @@ export default function Home() {
 
       {/* About me */}
       <section className='text-lg '>
-        <div className={`${CSSClasses.whiteBox} max-w-5xl `} id='about-me'>
+        <div className={`${CSSClasses.whiteBox} max-w-4xl `} id='about-me'>
           <h3
             className='
           text-3xl 

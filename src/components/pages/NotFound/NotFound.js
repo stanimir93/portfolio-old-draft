@@ -1,9 +1,9 @@
-import './notfound.css';
-import CSSClasses from '../../../css-classes/css-classes';
+import "./notfound.css";
+import CSSClasses from "../../../css-classes/css-classes";
 
 export default function NotFound() {
   return (
-    <main className='text-neutral-800 px-2'>
+    <main className={`${CSSClasses.main}`}>
       <section className={`${CSSClasses.whiteBox}`}>
         <div className={`${CSSClasses.padeHeadingContainer}`}>
           <h2 className={`${CSSClasses.padeHeading}`}>MY PROJECTS</h2>

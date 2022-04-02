@@ -1,12 +1,11 @@
-import './header.css';
-import { NavLink } from 'react-router-dom';
+import "./header.css";
+import { NavLink } from "react-router-dom";
 
 export default function Header() {
   return (
     <header
       className='
       p-0 py-0 
-      mb-14
       min-w-lg
       font-mono 
       select-none 
@@ -69,7 +68,7 @@ export default function Header() {
               </NavLink>
             </li>
           </ul>
-        </nav>{' '}
+        </nav>{" "}
       </div>
     </header>
   );

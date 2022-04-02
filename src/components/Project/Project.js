@@ -1,6 +1,6 @@
-import './project.css';
-import Badge from '../Badge/Badge';
-import { useEffect } from 'react';
+import "./project.css";
+import Badge from "../Badge/Badge";
+import { useEffect } from "react";
 
 export default function Project(props) {
   const title = props.project.title;
@@ -16,17 +16,17 @@ export default function Project(props) {
     for (let entry of entries) {
       if (cardBodyWidth !== entry.contentRect.width) {
         cardBodyWidth = entry.contentRect.width;
-        document.querySelectorAll('.card-body').forEach(elem => {
+        document.querySelectorAll(".card-body").forEach(elem => {
           let height = elem.clientHeight;
-          if (!elem.querySelector('.collapse-showing')) {
-            elem.style.minHeight = height + 'px}';
+          if (!elem.querySelector(".collapse-showing")) {
+            elem.style.minHeight = height + "px}";
           }
         });
       }
     }
   });
   useEffect(
-    () => resizeObserver.observe(document.querySelector('.project-card')),
+    () => resizeObserver.observe(document.querySelector(".project-card")),
     []
   );
 
@@ -66,26 +66,26 @@ export default function Project(props) {
             text-neutral-900 bg-blend-normal 
             cursor-pointer'
             onClick={ev => {
-              const container = ev.target.closest('.collapse-container');
-              const cardBody = ev.target.closest('.card-body');
-              if (container.classList.contains('collapse-hidden')) {
+              const container = ev.target.closest(".collapse-container");
+              const cardBody = ev.target.closest(".card-body");
+              if (container.classList.contains("collapse-hidden")) {
                 container.dataset.height = Number(cardBody.clientHeight) + 48;
 
-                container.classList.add('collapse-shown');
-                container.classList.remove('collapse-hidden');
+                container.classList.add("collapse-shown");
+                container.classList.remove("collapse-hidden");
                 setTimeout(() => {
-                  cardBody.style.minHeight = container.dataset.height + 'px';
+                  cardBody.style.minHeight = container.dataset.height + "px";
                 }, 200);
               } else {
-                container.classList.add('collapse-hiding');
-                container.classList.remove('collapse-shown');
+                container.classList.add("collapse-hiding");
+                container.classList.remove("collapse-shown");
                 container.dataset.height =
                   Number(container.dataset.height) - 48;
-                cardBody.style.minHeight = container.dataset.height + 'px';
+                cardBody.style.minHeight = container.dataset.height + "px";
 
                 setTimeout(() => {
-                  container.classList.add('collapse-hidden');
-                  container.classList.remove('collapse-hiding');
+                  container.classList.add("collapse-hidden");
+                  container.classList.remove("collapse-hiding");
                 }, 400);
               }
             }}
@@ -141,6 +141,7 @@ export default function Project(props) {
             transition  
             active:opacity-80
             text-sm font-semibold 
+            
             bg-gradient-to-r to-slate-900 from-slate-700 text-white '
             href={`https://${url}`}
             target='_blank'
