@@ -1,0 +1,29 @@
+#homepage h1 {
+  /* border-width: 3px;
+  border-image: linear-gradient(to right, #334155, #0f172a) 1;
+  border-radius: 0.9rem; */
+  font-size: 4vw;
+}
+@media screen and (min-width: 1100px) {
+  #homepage h1 {
+    font-size: 55px;
+  }
+}
+@media (max-width: 768px) {
+  #homepage > section:first-child h1 {
+    font-size: 40px;
+  }
+  #homepage > section:first-child h3 {
+    font-size: 22px;
+  }
+}
+
+/* #homepage > section:first-child {
+  max-width: 960px;
+} */
+
+#passport-photo {
+  min-width: 50px;
+  width: 100%;
+  max-width: 225px;
+}

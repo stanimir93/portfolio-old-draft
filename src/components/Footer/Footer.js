@@ -1,40 +1,55 @@
-import "./footer.css";
-import { Link } from "react-router-dom";
+import './footer.css';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  }
+
   return (
-    <footer className='pb-12 pt-32  bg-slate-100 text-slate-600 font-mono'>
+    <footer
+      className='
+      pt-14 px-4 
+    pb-12 
+
+    bg-slate-100 text-slate-600 
+    font-mono'
+    >
       {/* <hr className='w-96 m-auto mb-8  border-slate-200'/> */}
-      <nav>
-        <ul className='flex place-content-center text-lg mb-12 select-none'>
+      <nav className='flex justify-center'>
+        <ul className='flex justify-evenly max-w-xl w-full text-lg mb-12 select-none'>
           <li>
             <Link
-              className='mx-3 py-1 px-3 transition hover:text-slate-800'
+              className='py-1 px-2 transition hover:text-slate-800'
               to='/'
+              onClick={scrollToTop}
             >
               Home
             </Link>
           </li>
           <li>
             <Link
-              className='mx-3 py-1 px-3 transition hover:text-slate-800'
+              className='py-1 px-2 transition hover:text-slate-800'
               to='/projects'
+              onClick={scrollToTop}
             >
               Projects
             </Link>
           </li>
           <li>
             <Link
-              className='mx-3 py-1 px-3 transition hover:text-slate-800'
+              className='py-1 px-2 transition hover:text-slate-800'
               to='/cv'
+              onClick={scrollToTop}
             >
               CV
             </Link>
           </li>
           <li>
             <Link
-              className='mx-3 py-1 px-3 transition hover:text-slate-800'
+              className='py-1 px-2 transition hover:text-slate-800'
               to='/contact'
+              onClick={scrollToTop}
             >
               Contact
             </Link>

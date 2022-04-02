@@ -5,11 +5,11 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
 export default function App() {
-    return (
-        <>
-            <Header />
-            <Outlet />
-            <Footer />
-        </>
-    );
+  return (
+    <>
+      <Header />
+      <Outlet />
+      <Footer />
+    </>
+  );
 }

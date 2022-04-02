@@ -1,9 +1,19 @@
-import "./header.css";
-import { NavLink } from "react-router-dom";
+import './header.css';
+import { NavLink } from 'react-router-dom';
 
 export default function Header() {
   return (
-    <header className='drop-shadow-sm shadow-slate-200 shadow-lg p-0 y-0 font-mono select-none'>
+    <header
+      className='
+      p-0 py-0 
+      mb-14
+      min-w-lg
+      font-mono 
+      select-none 
+      drop-shadow-sm shadow-slate-200 shadow-lg 
+      bg-white
+    '
+    >
       <div className='flex items-baseline justify-center md:justify-between py-6 sm:p-8'>
         <a
           className='text-2xl hidden md:inline font-bold text-slate-800'
@@ -59,7 +69,7 @@ export default function Header() {
               </NavLink>
             </li>
           </ul>
-        </nav>{" "}
+        </nav>{' '}
       </div>
     </header>
   );

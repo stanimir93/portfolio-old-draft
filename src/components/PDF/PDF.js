@@ -1,5 +1,5 @@
-import "./pdf.css";
-import { useEffect } from "react";
+import './pdf.css';
+import { useEffect } from 'react';
 
 export default function PDF(props) {
   // Check if AdobeDC id Ready
@@ -11,17 +11,17 @@ export default function PDF(props) {
   // Display the PDF
   function initPdfViewer() {
     let adobeDCView = new window.AdobeDC.View({
-      clientId: "a0ae972a3fa841b2b493e72ef9248935",
-      divId: "adobe-dc-view",
+      clientId: 'a0ae972a3fa841b2b493e72ef9248935',
+      divId: 'adobe-dc-view',
     });
     // }
 
     adobeDCView.previewFile(
       {
-        content: { location: { url: "cv.pdf" } },
-        metaData: { fileName: "stanimir_nikolov_cv.pdf" },
+        content: { location: { url: 'cv.pdf' } },
+        metaData: { fileName: 'stanimir_nikolov_cv.pdf' },
       },
-      { embedMode: "IN_LINE" }
+      { embedMode: 'IN_LINE' }
     );
   }
 
@@ -31,10 +31,10 @@ export default function PDF(props) {
     if (AdobeDCReady()) {
       initPdfViewer();
     } else {
-      const script = document.createElement("script");
-      script.crossOrigin = "anonymous";
-      script.src = "https://documentcloud.adobe.com/view-sdk/main.js";
-      document.head.insertAdjacentElement("beforeend", script);
+      const script = document.createElement('script');
+      script.crossOrigin = 'anonymous';
+      script.src = 'https://documentcloud.adobe.com/view-sdk/main.js';
+      document.head.insertAdjacentElement('beforeend', script);
 
       script.onload = () => {
         if (!AdobeDCReady()) {
@@ -49,9 +49,11 @@ export default function PDF(props) {
     }
   }, []);
   return (
-    <div
-      className='mx-12 shadow-lg  shadow-slate-300 rounded-lg overflow-hidden'
-      id='adobe-dc-view'
-    ></div>
+    <section className='w-full max-w-screen-lg'>
+      <div
+        className='shadow-lg  shadow-slate-300 rounded-lg overflow-hidden'
+        id='adobe-dc-view'
+      ></div>
+    </section>
   );
 }

@@ -1,38 +1,37 @@
-import "./home.css";
+import './home.css';
+import CSSClasses from '../../../css-classes/css-classes';
 
 export default function Home() {
   return (
-    <main className='text-neutral-800'>
-      <section className='w-full max-w-screen-xl '>
+    <main
+      className='
+      px-4
+    text-neutral-800
+
+    '
+      id='homepage'
+    >
+      <section className='w-full max-w-5xl '>
         <div
-          className='
+          className={`${CSSClasses.whiteBox}
           grid grid-cols-12 
-          gap-x-12
-          gap-y-6
-          py-24 
-          px-12 lg:px-16 xl:px-20 
-          mt-20 mx-16 lg:mx-20 
-          rounded-xl 
-          shadow-md 
-          shadow-slate-300 bg-white lift-up'
+          gap-x-6 gap-y-10 xl:gap-y-6`}
         >
           {/* h1 */}
           <div
             className='
-            col-span-8 
-            h-fit w-min xl:w-fit
-            p-0.5 
-            mb-8 lg:mb-12
-            rounded-lg 
-            bg-gradient-to-r from-slate-700 to-slate-900 '
+            col-span-12 sm:col-span-8 
+            sm:mb-8 lg:mb-10
+            h-min
+            overflow-hidden
+            bg-gradient-to-r from-slate-700 to-slate-900 
+            text-center'
           >
             <h1
               className='
-              text-5xl lg:text-6xl  
-              px-3 py-4
-              font-extrabold 
-              rounded-lg 
-              bg-white mix-blend-lighten '
+              font-bold 
+              bg-white 
+              mix-blend-lighten '
             >
               STANIMIR NIKOLOV
             </h1>
@@ -41,35 +40,37 @@ export default function Home() {
           {/* img */}
           <img
             className='
-            col-span-4
-            row-span-3
+            col-span-5 sm:col-span-4
+            sm:row-span-2
             lg:justify-self-end
-            h-64
+     
             rounded-xl'
             src='./images/profile.webp'
             alt='profile_photo'
+            id='passport-photo'
           ></img>
 
           {/* h3 */}
-          <div className='col-span-8 w-fit'>
+          <div
+            className='
+          col-span-7
+           sm:col-span-8 
+          w-fit'
+          >
             <h3
               className='
-            px-4 py-0.5
-            text-2xl font-bold select-none
+            text-2xl sm:text-3xl font-bold 
             rounded-lg 
-            bg-gradient-to-r to-slate-900 from-slate-700 text-slate-100'
+             text-slate-800'
             >
               WEB&nbsp;DEVELOPER
             </h3>
-          </div>
-
-          {/* h6 */}
-          <div
-            className='
-            col-span-8  
-            w-fit'
-          >
-            <h6 className='text-lg text-slate-800'>
+            {/* h6 */}
+            <h6
+              className='
+            text-base sm:text-lg 
+            text-slate-800'
+            >
               JavaScript, CSS, HTML, React, Node, Express, SQL
             </h6>
           </div>
@@ -77,21 +78,13 @@ export default function Home() {
       </section>
 
       {/* About me */}
-      <section className='clear-both text-lg '>
-        <div
-          className='
-          max-w-4xl rounded-xl 
-          py-14 px-12 
-          mt-24 mx-16 
-        
-          shadow-md Íshadow-slate-300 bg-white 
-          lift-up'
-          id='about-me'
-        >
+      <section className='text-lg '>
+        <div className={`${CSSClasses.whiteBox} max-w-5xl `} id='about-me'>
           <h3
             className='
           text-3xl 
-          font-extrabold mb-8 
+          mb-6 
+          font-extrabold 
           text-neutral-900'
           >
             <a href='#about-me'>ABOUT ME</a>
