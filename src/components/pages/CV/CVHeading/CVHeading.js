@@ -2,7 +2,7 @@ import "./cvheading.css";
 import { useEffect } from "react";
 import printJS from "print-js";
 import UAParser from "ua-parser-js";
-import CSSClasses from "../../css-classes/css-classes";
+import CSSClasses from "../../../../css-classes";
 
 export default function CVHeading() {
   // Add event listenner for buttons
@@ -65,10 +65,14 @@ export default function CVHeading() {
     }
   }
   return (
-    <section className={`${CSSClasses.whiteBox} max-w-7xl`}>
-      <div className={`${CSSClasses.padeHeadingContainer}`}>
-        <h2 className={`${CSSClasses.padeHeading}`}>MY CV</h2>
-      </div>
+    <section
+      className={`
+      ${CSSClasses.boxColor}
+      ${CSSClasses.headingBoxSize}
+      max-w-7xl`}
+    >
+      <h2 className={`${CSSClasses.headingColor} ${CSSClasses.h2Size}`}>CV</h2>
+
       <div
         className='
         flex justify-center align-center

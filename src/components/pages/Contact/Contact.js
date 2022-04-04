@@ -1,15 +1,19 @@
 import "./contact.css";
-import CSSClasses from "../../../css-classes/css-classes";
+import CSSClasses from "../../../css-classes";
 
 export default function Contact() {
   return (
     <main className={`${CSSClasses.main}`}>
-      <section className={`${CSSClasses.whiteBox} max-w-7xl `}>
-        <div className={`${CSSClasses.padeHeadingContainer}`}>
-          <h2 className={`${CSSClasses.padeHeading}`}>CONTACT</h2>
-        </div>
-
-        <p className='text-lg'>
+      <section
+        className={`
+      ${CSSClasses.boxColor}
+      ${CSSClasses.headingBoxSize}
+       max-w-7xl `}
+      >
+        <h2 className={`${CSSClasses.headingColor} ${CSSClasses.h2Size}`}>
+          CONTACT
+        </h2>
+        <p>
           If you would like us to work together or have any questions, please do
           contact me.
         </p>

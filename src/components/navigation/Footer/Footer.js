@@ -10,14 +10,19 @@ export default function Footer() {
     <footer
       className='
       px-4 
-      pb-12 
+      pt-2
+      pb-8
     bg-slate-200 
     text-slate-600 
     font-mono'
     >
       {/* <hr className='w-96 m-auto mb-8  border-slate-200'/> */}
       <nav className='flex justify-center'>
-        <ul className='flex justify-evenly max-w-xl w-full text-lg mb-12 select-none'>
+        <ul
+          className='flex justify-evenly max-w-xl w-full text-lg 
+        mb-8 
+        select-none'
+        >
           <li>
             <Link
               className='py-1 px-2 transition hover:text-slate-800'
@@ -88,7 +93,7 @@ export default function Footer() {
           </a>
         </li>
       </ul>
-      <p className='text-center mt-12 select-none'>@stanimirnikolov.com</p>
+      <p className='text-center mt-8 select-none'>@stanimirnikolov.com</p>
     </footer>
   );
 }

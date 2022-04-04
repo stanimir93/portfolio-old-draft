@@ -13,7 +13,7 @@ export default function Badge(props) {
     bootstrap: ["#9333EA", "#fff"],
     tailwind: ["#7DD3FC", null],
     sqlite: [, "#0C4A6E"],
-    "adobe pdf embed api": ["#b91c1c", "#fff"],
+    "adobe embed api": ["#b91c1c", "#fff"],
   };
 
   const item = props.tool.toLowerCase();
@@ -24,7 +24,16 @@ export default function Badge(props) {
 
   return (
     <span
-      className='px-3 py-2 mr-3 mb-3 rounded-xl inline-block transition opacity-80 group-hover:opacity-100 cursor-default '
+      className='
+      badge
+      h-fit
+      py-2
+      text-center
+      rounded-xl 
+      whitespace-nowrap
+      transition 
+      opacity-80 group-hover:opacity-90  group-hover:md:opacity-100 
+      cursor-default '
       key={Date.now() + props.tool}
       style={{ backgroundColor: background, color: text }}
     >

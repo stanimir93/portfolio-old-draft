@@ -51,7 +51,7 @@ export default function PDF(props) {
   return (
     <section className='w-full max-w-4xl'>
       <div
-        className='shadow-lg  shadow-slate-300 rounded-lg overflow-hidden'
+        className='shadow-lg shadow-slate-300 rounded-lg overflow-hidden'
         id='adobe-dc-view'
       ></div>
     </section>

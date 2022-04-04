@@ -1,7 +1,7 @@
 {
   "stanimir_nikolov": {
-    "title": "StanimirNikolov.com",
-    "tools": ["React", "Tailwind", "Adobe PDF Embed API"],
+    "title": "Stanimir Nikolov ",
+    "tools": ["React", "JavaScript", "CSS", "Tailwind", "Adobe Embed API"],
     "url": "stanimirnikolov.com",
     "description": [
       "My portfolio website. It has my projects, CV and contact details. Built in React and Tailwind CSS."
@@ -14,7 +14,7 @@
     "image": "stanimirnikolov.com"
   },
   "zeolite": {
-    "title": "Zeolite.bg",
+    "title": "Trassing.com",
     "tools": ["JavaScript", "HTML", "CSS", "Bootstrap"],
     "url": "zeolite.bg",
     "description": [
@@ -30,7 +30,7 @@
 
   "psytest": {
     "title": "Psychology Test",
-    "tools": ["React", "Node", "Express", "Sequelize", "SQLite"],
+    "tools": ["React", "JavaScript", "Node", "Express", "Sequelize", "SQLite"],
     "url": "psy-research-expressions-demo.herokuapp.com",
     "description": [
       "Web Application running a psychological test for a research project. It collects data, sends it to the server and saves it in an SQL file."
@@ -44,7 +44,7 @@
     "image": "psy-test.webp"
   },
   "esudance": {
-    "title": "EsuDance",
+    "title": "Esudance.co.uk",
     "tools": ["HTML", "CSS", "JavaScript"],
     "url": "esudance.co.uk",
     "description": [
@@ -57,13 +57,15 @@
     "image": "esudance.webp"
   },
   "candle_label_generator": {
-    "title": "Label Generator for Candles",
+    "title": "Label Generator",
     "tools": ["HTML", "CSS", "JavaScript"],
     "url": "stanimir93.github.io/esuart-label-generator",
     "description": [
       "My first JavaScript project. A small web app used to create labels for candles"
     ],
-    "technical_details": ["Built in plain HTML, CSS and JavaScript (no libraries or frameworks)."],
+    "technical_details": [
+      "Built in plain HTML, CSS and JavaScript (no libraries or frameworks)."
+    ],
     "image": "candle-label-generator.webp"
   }
 }

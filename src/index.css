@@ -12,7 +12,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "Inter", "Roboto", -apple-system, "BlinkMacSystemFont",
+  font-family: "Roboto", "Inter", -apple-system, "BlinkMacSystemFont",
     "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -49,6 +49,15 @@ code {
   transition: transform 0.4s ease;
 }
 
-.lift-up:hover {
-  transform: translateY(-4px);
+@media screen and (min-width: 768px) {
+  .lift-up:hover {
+    transform: translateY(-4px);
+  }
+}
+
+/* Classes for XS screen */
+@media screen and (max-width: 400px) {
+  .xs-heading {
+    font-size: 9vw !important;
+  }
 }

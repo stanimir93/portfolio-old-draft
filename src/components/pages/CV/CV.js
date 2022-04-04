@@ -1,7 +1,7 @@
 import "./cv.css";
-import CVHeading from "../../CVHeading/CVHeading.js.js";
-import PDF from "../../PDF/PDF";
-import CSSClasses from "../../../css-classes/css-classes";
+import CVHeading from "./CVHeading/CVHeading";
+import PDF from "./PDF/PDF";
+import CSSClasses from "../../../css-classes";
 
 export default function CV() {
   return (
